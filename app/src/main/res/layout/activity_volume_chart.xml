@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.VolumeChart"
+    android:background="@color/cardview_shadow_end_color">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="10dp">-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_cetak"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="UNDUH"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_cloud_download_24"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginLeft="6dp"-->
+<!--            android:backgroundTint="#95D698"-->
+<!--            android:onClick="pdfdownload"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentEnd="true"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Grafik Volume Penggunaan Air"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_margin="6dp"-->
+<!--            android:textColor="#5e5e5e"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp"-->
+<!--            android:gravity="center"-->
+<!--            android:id="@+id/label"-->
+<!--            android:layout_centerVertical="true"/>-->
+<!--    </RelativeLayout>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutKode"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:elevation="3dp"
+        android:minHeight="?actionBarSize"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorHeight="4dp"
+        app:tabBackground="@color/blue_200"
+        app:tabMode="fixed"
+        app:tabMaxWidth="0dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerKode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayoutKode">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

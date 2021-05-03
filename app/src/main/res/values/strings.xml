@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fluid</string>
+    <string name="tentang">Aplikasi FLUID merupakan aplikasi pantau kendali air yang akan diimplementasikan dalam pengelolaan penggunaan air pada gedung - gedung. Tujuaan dibuatnya sistem ini untuk mencegah terjadinya pemborosan penggunaan air akibat lalai dalam mematikan kran air ataupun terjadinya kebocoran. Dengan menggunakan aplikasi ini pengelolaan air pada gedung dapat lebih efektif dan menghemat penggunaan air.  Menu utama pada aplikasi ini yaitu menu pengendalian dan menu pemantauan. Pada menu pemantauan pengguna dapat mengetahui data berapa banyak air yang terpakai dan status kebocoran yang terjadi pada gedung, data tersebut akan disajikan dalam bentuk tabel maupun grafik agar lebih mudah dipahami pengguna.  Sedangkan untuk menu pengendalian, aplikasi  menyajikan tombol ON/OFF yang dapat digunakan sebagai kendali aliran air apabila diduga telah terjadi kebocoran pada gedung ataupun sekedar mematikan ataupun menyalakan aliran kran air.</string>
+    <string-array name="lst_gedung">
+        <item>--Pilih Gedung--</item>
+        <item>Gednung Pusat</item>
+        <item>Gednung A</item>
+        <item>Gednung B</item>
+        <item>Gednung C</item>
+        <item>Gednung D</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

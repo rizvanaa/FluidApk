@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_gedung">
+        <item> </item>
+        <item> Pusat </item>
+        <item> Gedung A </item>
+        <item> Gedung B </item>
+        <item> Gedung C </item>
+        <item> Gedung D </item>
+    </string-array>
+
+</resources>

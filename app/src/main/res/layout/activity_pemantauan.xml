@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Pemantauan">
+
+    <RelativeLayout
+        android:id="@+id/lytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical">
+        <android.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorAccent"
+            android:minHeight="?attr/actionBarSize"
+            android:outlineAmbientShadowColor="@color/black"
+            app:theme='@style/ThemeOverlay.AppCompat.Dark'/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="PEMANTAUAN"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/btn_back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:src="@drawable/ic_baseline_arrow_back_ios_24"-->
+<!--            android:layout_marginStart="16dp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/btn_home"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:src="@drawable/ic_baseline_home_24"-->
+<!--            android:layout_marginEnd="16dp"/>-->
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lytoolbar">
+
+        <LinearLayout
+            android:id="@+id/lyutama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lytoolbar"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="PEMANTAUAN REALTIME"
+                            android:textColor="#5e5e5e"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Grafik realtime penggunaan air"
+                            android:textColor="#5e5e5e"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/realtime"/>
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/panah1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginTop="25dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:src="@drawable/ic_arrow_right" />-->
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Debit"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="PEMANTAUAN PERWAKTU"
+                            android:textColor="#5e5e5e"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Grafik penggunaan air berdasarkan
+                             kurun waktu tertentu"
+                            android:textColor="#5e5e5e"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/perwaktu" />
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/panah2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginTop="25dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:src="@drawable/ic_arrow_right" />-->
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Kebocoran"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="KEBOCORAN AIR"
+                            android:textColor="#5e5e5e"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="55dp"
+                            android:layout_marginLeft="100dp"
+                            android:text="Tabel data status kebocoran air"
+                            android:textColor="#5e5e5e"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_bocor" />
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/panah3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginTop="25dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:src="@drawable/ic_arrow_right" />-->
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

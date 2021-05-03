@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplikasiku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_dashboard"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_dashboard"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aplikasiku"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ChartActivity"></activity>
+        <activity
+            android:name=".activity.RatePerwaktuChart"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.RateRealtimeChart"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".activity.UbahPswd" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Kebocoran" />
+        <activity android:name=".activity.Debit" />
+        <activity android:name=".activity.Rate" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.Pengendalian" />
+        <activity android:name=".activity.Pemantauan" />
+        <activity android:name=".activity.Akun" />
+        <activity android:name=".activity.Tentang" />
+        <activity android:name=".activity.Login" />
+        <activity
+            android:name=".activity.VolumeChart"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.TableRateActivity" />
+    </application>
+
+</manifest>
